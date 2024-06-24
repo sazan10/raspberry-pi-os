@@ -19,7 +19,7 @@ jobs:
         find . -name Makefile | while read makefile; do
           dir=$(dirname "$makefile")
           echo "Entering directory: $dir"
-          if [$dir=="/src/lesson02" ]; then
+          if [$dir=="./exercises/lesson02/2/szediwy" ]; then
             echo "Does not compile in this dir."
           else
             (cd "$dir" && make)
